@@ -16,7 +16,7 @@ const Card = () => {
 
   const manejador = (e) => {
     e.preventDefault()
-    if(/^\S.{2,}$/.test(cliente.nombre)){
+    if(/^\S.{2,}$/.test(cliente.nombre) && cliente.auto.length >= 6){
         setShow(true)
         setErr(false)
     }else{
